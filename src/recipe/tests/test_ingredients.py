@@ -62,9 +62,9 @@ class PrivateIngredientApiTests(TestCase):
         self.assertEqual(len(res.data), 1)
         self.assertEqual(res.data[0]['name'], ingredient.name)
 
-    def create_ingredient_successful(self):
+    def test_create_ingredient_successful(self):
         """Test creating a new ingredients"""
-        payload = {'name': 'Test ingredients'}
+        payload = {'name': 'Tomate'}
         self.client.post(INGREDIENTS_URL, payload)
 
         exists = Ingredient.objects.filter(
