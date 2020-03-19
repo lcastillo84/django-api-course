@@ -15,5 +15,6 @@
 				}
 			}
 		]
-	}
+	},
+	"python.pythonPath": "D:\\Work\\Dev\\Courses\\web-development\\django\\django-api\\.venv\\Scripts\\python.exe"
 }
